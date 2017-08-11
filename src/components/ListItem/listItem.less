@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import "../../assets/css/variable";
+.dataList-list-item{
+  margin-bottom: 10px;
+  box-shadow: 0 5px 25px 1px #ccc;
+  background: #fff;
+  padding: 0 16px 20px;
+  .am-list-item{
+    position: relative;
+    &:before{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      width:0;
+      height: 40%;
+      border-left: 6px solid @ensure-color;
+    }
+  }
+  .am-list-content{
+    font-size: @list-title-size;
+  }
+}

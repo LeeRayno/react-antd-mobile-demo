@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import "../../assets/css/variable";
+.app-header{
+  .am-navbar{
+    background-color: @navbar-bg;
+  }
+  .am-navbar-left-content{
+    display: block;
+    height:100%;
+    width:100%;
+  }
+  .navbar-left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .filter{
+    &-btn{
+      height:100%;
+      display: flex;
+      align-items: center;
+    }
+    &-bg{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      background: url('../../assets/img/filter.png') no-repeat center center / 100%;
+    }
+  }
+}

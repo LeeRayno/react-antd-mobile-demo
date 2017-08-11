@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.app{
+  .main{
+    @diff: 90px;
+    height: calc(~"100vh - @{diff}");
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
