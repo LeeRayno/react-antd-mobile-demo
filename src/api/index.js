@@ -5,4 +5,5 @@ export default {
 	loginUrl: 'activityservice/contact/login',
 	prticipantpage: 'activityservice/contact/prticipantpage/',
 	audit: 'activityservice/contact/audit',
+	updateprticipant: 'activityservice/activitymicrosite/updateprticipant'
 }

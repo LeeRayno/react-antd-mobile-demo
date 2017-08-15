@@ -12,8 +12,8 @@
       height: 94px;
       align-items: center;
       box-sizing: border-box;
-      &.username{
-        border-bottom: 1PX solid #ccc;
+      &.password{
+        border-top: 1PX solid #ccc;
       }
       >i{
         display: block;
@@ -30,10 +30,11 @@
       input{
         display: block;
         border:none;
-        flex: 1 1 0;
-        height: 96%;
+        flex: 1;
+        height:100%;
         padding-left: 30px;
         font-size: @base-size;
+        box-sizing: border-box;
       }
     }
   }

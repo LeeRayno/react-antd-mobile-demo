@@ -8,7 +8,9 @@ const app = (state = {
 	backStatus: false,
 	filterStatus: false,
 	sidebarStatus: false,
-	title: '登录'
+	title: '登录',
+	metaData: [],
+	listData: {}
 }, action) => {
 	switch (action.type) {
 		case types.CHANGE_BACK_STATUS:
@@ -30,6 +32,16 @@ const app = (state = {
 			return {
 				...state,
 				sidebarStatus: action.playLoad
+			}
+		case types.SAVE_META_DATA:
+			return {
+				...state,
+				metaData: action.playLoad
+			}
+		case types.SAVE_LIST_DATA:
+			return {
+				...state,
+				listData: action.playLoad
 			}
 		default:
 			return state

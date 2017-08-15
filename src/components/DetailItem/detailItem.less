@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "../../assets/css/variable";
+
+.detail-item{
+  display: flex;
+  height: 100px;
+  border-bottom: 1PX solid #ccc;
+  align-items: center;
+  justify-content: space-between;
+  font-size: @base-size;
+  &:last-child{
+    border-bottom: none;
+  }
+  .key{
+    color: #666;
+  }
+  .value{
+    color: #000;
+  }
+}

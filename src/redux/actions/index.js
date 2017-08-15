@@ -24,7 +24,20 @@ export const changeTitle = playLoad => ({
 	playLoad
 })
 
+// sidebar
 export const changeSidebarStatus = playLoad => ({
 	type: 'CHANGE_SIDEBAR_STATUS',
+	playLoad
+})
+
+//metaData
+export const saveMetaData = playLoad => ({
+	type: 'SAVE_META_DATA',
+	playLoad
+})
+
+//listData
+export const saveListData = playLoad => ({
+	type: 'SAVE_LIST_DATA',
 	playLoad
 })

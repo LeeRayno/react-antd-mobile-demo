@@ -8,12 +8,10 @@ import { changeSidebarStatus } from '../../redux/actions'
 import './header.less'
 class Header extends Component {
 	leftClick = () => {
-		console.log('leftClick')
 		window.history.back()
 	}
 
 	rightClick = () => {
-		console.log('rightclick')
 		const { dispatch, sidebarStatus } = this.props
 		dispatch(changeSidebarStatus(!sidebarStatus))
 	}

@@ -18,8 +18,8 @@ class Login extends Component {
 		}
 	}
 	// http://localhost:3000/index.html?activity_id=59546453c5f45c0001dfde8c#/login
-	// yygf
-	// 123056
+	// yyg
+	// 12305
 	componentDidMount () {
 		const { dispatch, title } = this.props
 		dispatch(changeBackStatus(false))
@@ -60,7 +60,6 @@ class Login extends Component {
 
 		axios.post(api.loginUrl, params)
 		.then(res => {
-			console.log(res)
 			if (res.data.flag === 60003) {
 				Toast.fail(res.data.desc, 1)
 				return
