@@ -9,7 +9,7 @@ class App extends Component {
 	render() {
 		return(
 			<div className="app">
-				<Header/>
+				<Header {...this.props}/>
 				<div className="main">
 					<Switch>
 						{routes.map((route, i) => (

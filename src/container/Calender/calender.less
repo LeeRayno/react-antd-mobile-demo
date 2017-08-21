@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import "../../assets/css/variable";
+
+.calender{
+  /*时间*/
+  .fade-enter-active,
+  .fade-leave-active{
+    transition: .5s all ease;
+  }
+  /*进入时状态*/
+  .fade-enter,
+  .fade-leave.fade-leave-active{
+    .calender{
+      &-mask{
+        background: rgba(0,0,0,0)
+      }
+      &-content{
+        transform: translate3d(0, 100%, 0);
+      }
+    }
+  }
+  /*离开时状态*/
+  .fade-leave,
+  .fade-enter.fade-enter-active{
+    .calender{
+      &-mask{
+        background: rgba(0,0,0,.5)
+      }
+      &-content{
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+  .am-list-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

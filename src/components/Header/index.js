@@ -7,6 +7,15 @@ import { NavBar, Icon } from 'antd-mobile'
 import { changeSidebarStatus } from '../../redux/actions'
 import './header.less'
 class Header extends Component {
+
+	handleClick = (e) => {
+		const { history } = this.props
+		if (e.target.className === 'am-navbar-title') {
+			history.push('/calender')
+			return
+		}
+	}
+
 	leftClick = () => {
 		window.history.back()
 	}
@@ -23,7 +32,7 @@ class Header extends Component {
 		const backDisplay = backStatus ? 'flex' : 'none'
 		const filterDisplay = filterStatus ? 'flex' :'none'
 		return(
-			<header className="app-header">
+			<header onClick={this.handleClick} className="app-header">
 				<NavBar leftContent={[
 					<div key="0" className="navbar-left" style={{display: backDisplay}} onClick={this.leftClick}>
 						<Icon type="left" />
